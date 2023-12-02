@@ -1,5 +1,9 @@
 :root {
     --nav-brown-color: #660014;
+    --universal-black: #0D0E10;
+    --background-color: rgba(0, 0, 0, 0.87);
+    --white-color: #FFFFFF;
+    --gold-color: rgb(193, 163, 98);
 }
 
 
@@ -9,11 +13,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--background-color);
+}
+
 /* NAV Starts */
 
 nav{
     width: 100%;
-    background-color: var(--nav-brown-color);
+    background-color: var(--universal-black);
     height: 80px;
     padding: 0 48px;
     display: flex;
@@ -60,7 +68,7 @@ nav .left-side ul{
 }
 
 nav ul li.active{
-    border: 1px solid white;
+    border: 1px solid #FFFFFF;
     border-radius: 48px;
     display: flex;
     justify-content: center;
@@ -102,7 +110,7 @@ nav .search-bar input {
     font: inherit;
     letter-spacing: inherit;
     color: currentcolor;
-    border: 0px;
+    border: none;
     box-sizing: content-box;
     background: none;
     height: 1.4375em;
